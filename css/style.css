@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #353540;
+}
+
+[class*="__container"] {
+  max-width: 1082px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  min-height: 114px;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 5;
+}
+
+.header__menu {
+  flex: 1 1 auto;
+}
+
+.header__button {
+  position: relative;
+  z-index: 5;
+  flex: 0 0 252px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #fcfdfe;
+  padding: 14px 30px;
+  border-radius: 10px;
+  background-color: #ee4f3c;
+  transition: background-color 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: #c64a4a;
+}
+/* ================== */
+.block-text_center {
+  text-align: center;
+}
+
+.block-text__title {
+  font-family: Georgia;
+  font-weight: 700;
+  font-size: 72px;
+  width: 652px;
+  height: 190px;
+  line-height: 126%;
+  color: #353540;
+}
+
+.block-text__title:not(:last-child) {
+  margin: 0px 0px 12px 0px;
+}
+
+.block-text__text {
+  width: 598px;
+  height: 91px;
+  line-height: 138.5%;
+  color: #5d5d61;
+}
+
+.block-text__text:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+/* ======================= */
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0px 40px 0px 0px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+/* =======find=========== */
+.find {
+}
+
+.find__container {
+}
+
+.find__content {
+}
