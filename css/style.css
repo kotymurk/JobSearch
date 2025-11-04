@@ -39,7 +39,6 @@ body {
 
 body {
   font-family: Poppins;
-  font-size: 18px;
   color: #353540;
 }
 
@@ -47,6 +46,14 @@ body {
   max-width: 1082px;
   margin: 0px auto;
   padding: 0px 15px;
+}
+
+.wrapper {
+  height: 100%;
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: top left;
 }
 
 .header {
@@ -98,7 +105,7 @@ body {
 .button:hover {
   background-color: #c64a4a;
 }
-/* ================== */
+/* =========text title========= */
 .block-text_center {
   text-align: center;
 }
@@ -107,9 +114,6 @@ body {
   font-family: Georgia;
   font-weight: 700;
   font-size: 72px;
-  width: 652px;
-  height: 190px;
-  line-height: 126%;
   color: #353540;
 }
 
@@ -118,9 +122,7 @@ body {
 }
 
 .block-text__text {
-  width: 598px;
-  height: 91px;
-  line-height: 138.5%;
+  font-weight: 300;
   color: #5d5d61;
 }
 
@@ -155,6 +157,7 @@ body {
   text-decoration: underline;
 }
 /* =======find=========== */
+
 .find {
 }
 
@@ -162,4 +165,74 @@ body {
 }
 
 .find__content {
+  display: flex;
+}
+
+.find__form {
+  display: inline-flex;
+  flex: 0 1 50%;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.find__form__form {
+}
+
+.find__form input {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 70px;
+  color: #737373;
+  padding: 0px 20px;
+  border-right: 0px;
+  box-sizing: border-box;
+}
+
+.diviber {
+  width: 1px;
+  height: 28px;
+  background-color: #353540;
+  margin: 0px 20px;
+}
+
+.find__ .find__content {
+}
+.block-text__title_find {
+  width: 652px;
+  height: 190px;
+  line-height: 126%;
+}
+.find__block-text {
+  font-size: 18px;
+  width: 598px;
+  height: 91px;
+  line-height: 2;
+}
+
+.find__block-text:not(:last-child) {
+  margin: 5px;
+}
+
+.find__form {
+}
+form.find__form {
+  box-shadow: none;
+}
+.find__form-button {
+}
+.find__form-button .button {
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.decoration-find__image img {
+  flex: 0 1 50%;
+  width: 100%;
+  height: auto;
 }
