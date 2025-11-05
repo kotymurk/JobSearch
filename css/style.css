@@ -35,25 +35,25 @@ html,
 body {
   height: 100%;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Poppins;
+  font-weight: 300;
   color: #353540;
 }
 
 [class*="__container"] {
-  max-width: 1082px;
+  max-width: 1176px;
   margin: 0px auto;
   padding: 0px 15px;
 }
 
 .wrapper {
-  height: 100%;
   background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: top left;
+  background-size: 40%;
 }
 
 .header {
@@ -68,6 +68,7 @@ body {
   display: flex;
   min-height: 114px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -105,30 +106,7 @@ body {
 .button:hover {
   background-color: #c64a4a;
 }
-/* =========text title========= */
-.block-text_center {
-  text-align: center;
-}
 
-.block-text__title {
-  font-family: Georgia;
-  font-weight: 700;
-  font-size: 72px;
-  color: #353540;
-}
-
-.block-text__title:not(:last-child) {
-  margin: 0px 0px 12px 0px;
-}
-
-.block-text__text {
-  font-weight: 300;
-  color: #5d5d61;
-}
-
-.block-text__text:not(:last-child) {
-  margin: 0px 0px 24px 0px;
-}
 /* ======================= */
 
 .menu {
@@ -157,15 +135,36 @@ body {
   text-decoration: underline;
 }
 /* =======find=========== */
-
-.find {
-}
+/* .find {
+} */
 
 .find__container {
+  display: flex;
+  flex: 1 1 50%;
 }
 
 .find__content {
-  display: flex;
+  flex: 1 0 50%;
+  padding: 100px 0px;
+}
+
+.main-text {
+  max-width: 652px;
+}
+
+.main-text h1 {
+  font-family: Georgia;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 95px;
+  color: #353540;
+}
+
+.main-text p {
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  margin: 30px 0px;
 }
 
 .find__form {
@@ -177,7 +176,9 @@ body {
   border-radius: 10px;
 }
 
-.find__form__form {
+form.find__form {
+  background-color: #fff;
+  box-shadow: none;
 }
 
 .find__form input {
@@ -197,31 +198,9 @@ body {
   margin: 0px 20px;
 }
 
-.find__ .find__content {
-}
-.block-text__title_find {
-  width: 652px;
-  height: 190px;
-  line-height: 126%;
-}
-.find__block-text {
-  font-size: 18px;
-  width: 598px;
-  height: 91px;
-  line-height: 2;
-}
+/* .find__form-button {
+} */
 
-.find__block-text:not(:last-child) {
-  margin: 5px;
-}
-
-.find__form {
-}
-form.find__form {
-  box-shadow: none;
-}
-.find__form-button {
-}
 .find__form-button .button {
   height: 70px;
   font-size: 20px;
@@ -231,8 +210,119 @@ form.find__form {
   border-radius: 0px 10px 10px 0px;
 }
 
-.decoration-find__image img {
+.find__form img {
+  margin: 0px 0px 0px 20px;
+}
+.find__decoration {
+  position: relative;
   flex: 0 1 50%;
+  margin: 0px 80px;
+}
+.find__decoration__decor {
+  position: absolute;
+  z-index: 50;
+}
+
+.find__decoration__decor_1 {
+  top: 176px;
+  right: 657px;
+}
+
+.find__decoration__decor_2 {
+  top: -20px;
+  right: 518px;
+}
+
+.find__decoration__decor_3 {
+  top: 70px;
+  right: 50px;
+}
+
+.find__decoration__decor_4 {
+  bottom: 165px;
+  right: -14px;
+}
+
+.find__decoration__decor_5 {
+  bottom: 62px;
+  right: 573px;
+}
+
+.find__decoration__decor_6 {
+  top: 173px;
+  right: -41px;
+}
+
+.decoration-find__image {
+  position: relative;
+  width: auto;
+  z-index: 2;
+}
+/* ======================================== */
+
+.job-post {
+  position: relative;
+  background-image: url("/img/back.png");
+  background-repeat: repeat-x;
+  background-color: #232443;
+  margin-top: -60px;
+  width: 200vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.job-post__container {
+  height: 650px;
+}
+
+.job-post__text {
+  font-family: Georgia;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
+  color: #fff;
+  text-align: start;
+  padding: 100px 0px;
+}
+
+/* .job-post__card {
+} */
+
+.job-post__card__items {
+  max-width: 1176px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-post__card__item_1,
+.job-post__card__item_2,
+.job-post__card__item_3 {
+  flex-basis: 33.33%;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.job-card {
+  flex: 0 1 33.33%;
+  padding: 0 10px;
+}
+
+.job-post__card__subtext {
   width: 100%;
-  height: auto;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.job-post__card__subtext a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
 }
