@@ -186,7 +186,7 @@ form.find__form {
   flex: 1 1 auto;
   min-height: 70px;
   color: #737373;
-  padding: 0px 20px;
+  padding: 0px 10px;
   border-right: 0px;
   box-sizing: border-box;
 }
@@ -292,8 +292,51 @@ form.find__form {
 .job-post__card__items {
   max-width: 1176px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.company__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company__info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.company__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.company__logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.rating_group {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .job-post__card__item_1,
@@ -302,11 +345,87 @@ form.find__form {
   flex-basis: 33.33%;
   flex-grow: 0;
   flex-shrink: 1;
+  width: 370px;
+  height: 250px;
 }
 
 .job-card {
-  flex: 0 1 33.33%;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  flex: 1 1 330px;
+  min-width: 330px;
+  min-height: 250px;
+  padding: 25px 30px;
+  margin: 0;
+  background-color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.job-card:hover {
+  background-color: rgba(238, 79, 60, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.job-card:hover .job__type,
+.job-card:hover .job__location,
+.job-card:hover .job__details,
+.job-card:hover .company__info h4 {
+  color: #fff;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.job-card:hover .job__title,
+.job-card:hover .job__price {
+  color: aliceblue;
+}
+
+.card__body {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.job__title {
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: 700;
+  color: #353540;
+  margin-bottom: 5px;
+}
+
+.job__details {
+  font-size: 16px;
+  font-weight: 300;
+  color: #5d5d61;
+  line-height: 2;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+  gap: 10px;
+}
+
+.job__type,
+.job__location {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.job__price {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: transparent;
+  color: #353540;
 }
 
 .job-post__card__subtext {
