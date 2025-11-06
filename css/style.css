@@ -53,6 +53,13 @@ body {
   color: #353540;
 }
 
+[class*="__title"] {
+  font-family: Georgia;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: start;
+}
+
 [class*="__container"] {
   max-width: 1176px;
   margin: 0px auto;
@@ -473,12 +480,7 @@ form.find__form {
 
 .categories__title {
   max-width: 1176px;
-  font-family: Georgia;
-  font-weight: 700;
-  font-size: 48px;
   line-height: 75px;
-  color: #fff;
-  text-align: start;
   padding: 100px 0px;
   color: #353540;
 }
@@ -489,6 +491,7 @@ form.find__form {
 .categories__card__items {
   max-width: 1176px;
   display: flex;
+  flex: 0 1 25%;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
@@ -505,7 +508,6 @@ form.find__form {
   align-items: center;
   text-align: center;
   border: 1px solid #eeeeee;
-  flex: 1 1 25%;
   width: 270px;
   height: 270px;
   flex-grow: 0;
@@ -517,13 +519,19 @@ form.find__form {
 }
 
 .item__img {
-  size: 70px;
+  size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: #fff8f8;
   margin-bottom: 15px;
+}
+
+.item__img img,
+svg {
+  width: 60px;
+  height: 60px;
 }
 
 .categories-icon {
@@ -548,4 +556,32 @@ form.find__form {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 2px;
+}
+
+/* ===========get=================== */
+
+.get-start {
+  margin: 200px 0;
+}
+.get-start__container {
+  display: flex;
+  flex: 1 1 50%;
+}
+.get-start__info {
+  margin: 200px 0;
+}
+.get-start__title {
+}
+
+.get-start__text {
+}
+.get-start__button {
+}
+
+.get-start__picture {
+  max-width: 810px;
+}
+
+.picture__img {
+  display: flex;
 }
