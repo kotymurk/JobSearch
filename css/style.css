@@ -950,3 +950,76 @@ ul::column::scroll-marker {
 ul::column::scroll-marker:target-current {
   background-color: black;
 } */
+
+/* =======sub========= */
+
+.subscribe {
+  position: relative;
+  margin: 239px 0px 0px 0px;
+  background-image: url("../img/sub/414.png");
+  background-repeat: repeat;
+}
+
+.subscribe__container {
+}
+
+.subscribe__body {
+  width: 1170px;
+  height: 400px;
+  position: relative;
+  background-image: url("../img/sub/Group\ 419.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 2;
+  align-items: center;
+  background-color: #ee4f3c;
+  border-radius: 20px;
+  padding: 85px 150px;
+  top: -89px;
+}
+
+.subscribe__title {
+  max-width: 515px;
+  color: #fff;
+  line-height: 133%;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin: 0px 0px 50px;
+}
+
+.subscribe_form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  margin: 0px 250px 0px 0px;
+}
+
+.subscribe__input {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 70px;
+  background-color: #f9f9f9;
+  padding: 0px 20px;
+  border-right: 0px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.subscribe__input:focus {
+  color: #000;
+}
+
+.subscribe__button {
+  background: #ee4f3c;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  display: flex;
+  min-height: 70px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  padding: 0px 22px;
+}
