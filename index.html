@@ -7,13 +7,20 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>JobSearch</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="header__container">
+        <div class="header__container" data-aos="fade-up">
           <a href="" class="header__logo">
             <img src="./img/logo.svg" alt="logo" />
           </a>
@@ -42,7 +49,7 @@
       </header>
       <main class="main">
         <section class="find">
-          <div class="find__container">
+          <div class="find__container" data-aos="fade-left">
             <div class="find__content">
               <div class="main-text">
                 <h1>Find & Apply For Your Dream Job</h1>
@@ -94,7 +101,7 @@
           </div>
         </section>
         <section class="job-post">
-          <div class="job-post__container __container">
+          <div class="job-post__container __container" data-aos="fade-right">
             <h3 class="job-post__text">Popular Job Posts</h3>
             <div class="job-post__card">
               <div class="job-post__card__items">
@@ -651,7 +658,7 @@
             </div>
           </div>
         </section>
-        <section class="feedback1">
+        <!-- <section class="feedback1">
           <div class="feedback__container">
             <h2 class="feedback__title">Great Feedback From Candidates</h2>
             <div class="slides">
@@ -668,11 +675,13 @@
               </ul>
             </div>
           
-        </section>
+        </section> -->
         <section class="subscribe">
           <div class="subscribe__container">
             <div class="subscribe__body">
-              <h4 class="subscribe__title">Subscribe to get update vacancy post</h4>
+              <h4 class="subscribe__title">
+                Subscribe to get update vacancy post
+              </h4>
               <form action="#" class="subscribe_form">
                 <input
                   autocomplete="off"
@@ -684,103 +693,130 @@
                 />
                 <button type="submit" class="subscribe__button button">
                   Subscribe
-                  <img src="./img/sub/Vector.svg" alt="Vector">
+                  <img src="./img/sub/Vector.svg" alt="Vector" />
                 </button>
               </form>
             </div>
           </div>
+          <div class="subscribe__picture">
+            <img src="./img/sub/Group 202.png" alt="point" />
+          </div>
         </section>
       </main>
       <footer class="footer">
-          <div class="footer__main __container">
-            <div class="footer__row">
-              <div class="footer__column">
-                <div class="footer__label">
-                  <img src="./img/logo.svg" alt="logo">
-                </div>
-                <div class="footer__contacts contacts-footer">
-                  <a
-                    href=""
-                    class="contacts-footer__item contacts-footer__item_map"
-                    >152/3 , Western Road, New York</a
-                  >
-                  <a
-                    href="tell:4805550103"
-                    class="contacts-footer__item contacts-footer__item_phone"
-                    >Call Us: +99-8569-5234</a
-                  >
-                </div>
-                <div class="footer__social social">
-                  <img src="./img/foot/facebook.svg" alt="facebook">
-                  <img src="./img/foot/twitter.svg" alt="twitter">
-                  <img src="./img/foot/indeed.svg" alt="indeed">
-
-                 </div>
+        <div class="footer__main __container">
+          <div class="footer__row">
+            <div class="footer__column">
+              <div class="footer__label">
+                <img src="./img/logo.svg" alt="logo" />
               </div>
-              <div class="footer__column">
-                <div class="footer__label">Explore</div>
-                <nav class="footer__menu menu-footer">
-                  <ul class="menu-footer__list">
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link"> Featured Job</a>
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Recent Job Post</a>
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Total Candidates</a>
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Support</a>
-                    </li>
-                  </ul>
-                </nav>
+              <div class="footer__contacts contacts-footer">
+                <a
+                  href=""
+                  class="contacts-footer__item contacts-footer__item_map"
+                  >152/3 , Western Road, New York</a
+                >
+                <a
+                  href="tell:4805550103"
+                  class="contacts-footer__item contacts-footer__item_phone"
+                  >Call Us: +99-8569-5234</a
+                >
               </div>
-              <div class="footer__column">
-                <div class="footer__label">Useful Link</div>
-                <nav class="footer__menu menu-footer">
-                  <ul class="menu-footer__list">
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link"
-                        >About Us</a
-                      >
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Blog</a>
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Company</a>
-                    </li>
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Contact Us</a>
-                    </li>
-                  </ul>
-                </nav>
+              <div class="footer__social social">
+                <img src="./img/foot/facebook.svg" alt="facebook" />
+                <img src="./img/foot/twitter.svg" alt="twitter" />
+                <img src="./img/foot/indeed.svg" alt="indeed" />
               </div>
-              <div class="footer__column">
-                <div class="footer__label">Latest News</div>
-                <nav class="footer__menu menu-footer">
-                  <ul class="menu-footer__list">
-                    <li class="menu-footer__item">
-                      <a href="" class="menu-footer__link">Understanding the Cybersecurity Landscape in 2021</a>
-                    </li>
-                    
-                  </ul>
-                </nav>
-              </div>
-            
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Explore</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link"> Featured Job</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Recent Job Post</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Total Candidates</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Support</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Useful Link</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">About Us</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Blog</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Company</a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="" class="menu-footer__link">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <div class="footer__label">Latest News</div>
+              <nav class="footer__menu menu-footer">
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <div class="menu-footer__news">
+                      <img src="./img/foot/1.png" alt="1" />
+                      <div class="news-text-content">
+                        <a href="" class="menu-footer__link"
+                          >Understanding the Cybersecurity Landscape in 2021</a
+                        >
+                        <div class="menu-footer__data">10 November, 2025</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-footer__item">
+                    <div class="menu-footer__news">
+                      <img src="./img/foot/2.png" alt="2" />
+                      <div class="news-text-content">
+                        <a href="" class="menu-footer__link"
+                          >How to Design for Maximum <br />Product Trust</a
+                        >
+                        <div class="menu-footer__data">10 November, 2025</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-          <div class="footer__linear"></div>
+        </div>
+        <div class="footer__picture1">
+          <img src="./img/foot/Group 203.png" alt="point" />
+        </div>
+        <div class="footer__picture2">
+          <img src="./img/foot/Group 202.png" alt="point" />
+        </div>
+        <div class="footer__linear"></div>
         <div class="footer__sub">
           <div class="footer__container _container">
-            <div class="footer__copy">
-              Copyright 2021, All right reserved
-            </div>
+            <div class="footer__copy">Copyright 2021, All right reserved</div>
           </div>
         </div>
       </footer>
     </div>
-     <script src="js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
